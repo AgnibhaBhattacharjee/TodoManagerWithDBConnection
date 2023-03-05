@@ -1,0 +1,30 @@
+Query for creating user table-
+
+CREATE TABLE user (
+    userName varchar(255) not null unique,
+    email varchar(255) not null unique,
+    pass varchar(255) not null ,
+	primary key(userName)
+
+);
+
+
+Query for creating task table-
+
+CREATE TABLE task (
+    taskId bigint not null unique AUTO_INCREMENT,
+    taskTitle varchar(255),
+    taskText varchar(255),
+	assignedTo varchar(255) not null,
+	taskCompleted boolean,
+	primary key(taskId)
+
+);
+
+Note-
+	Pre existing user credentials created in database-
+		UserName	Email			Pass
+		a			a@a.com			a
+		b			b@b.com			b
+		c			c@c.com			c
+		d			d@d.com			d
